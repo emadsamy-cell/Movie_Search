@@ -93,8 +93,8 @@ The backend exposes several endpoints for interacting with the movie data and fa
 - GET /omdb/search?title=batman&page=20 Fetch a list of movies based on the search query.
     - Query parameters: title, page (pagination)
 
--POST /movies: Add a movie to the favorites list.
-        Request body: Movie object (e.g., title, poster, year, etc.)
+- POST /movies: Add a movie to the favorites list.
+  - Request body: Movie object (e.g., title, poster, year)
 
 - GET /movies: Retrieve the list of favorite movies.
 
@@ -103,8 +103,3 @@ The backend exposes several endpoints for interacting with the movie data and fa
 - PUT /movies/:id: Edit a favorite movie by ID.
 
 
-
-- **Node.js:** A JavaScript runtime built on Chrome's V8 JavaScript engine, used for building fast and scalable network applications.
-- **Express.js:** A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-- **MongoDB:** A NoSQL database program that uses JSON-like documents with optional schemas, perfect for handling a flexible product catalog.
-- **Redis:** An in-memory data store used for caching and real-time data processing.
